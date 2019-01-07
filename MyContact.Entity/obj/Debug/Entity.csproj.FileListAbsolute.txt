@@ -1,5 +1,0 @@
-H:\Project\Contact\Entity.Contact\bin\Debug\Entity.Contact.dll
-H:\Project\Contact\Entity.Contact\bin\Debug\Entity.Contact.pdb
-H:\Project\Contact\Entity.Contact\obj\Debug\Entity.csproj.CoreCompileInputs.cache
-H:\Project\Contact\Entity.Contact\obj\Debug\Entity.Contact.dll
-H:\Project\Contact\Entity.Contact\obj\Debug\Entity.Contact.pdb

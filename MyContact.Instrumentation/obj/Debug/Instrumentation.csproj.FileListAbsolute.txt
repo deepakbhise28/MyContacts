@@ -1,6 +1,0 @@
-H:\Project\Contact\Instrumentation\bin\Debug\Instrumentation.dll
-H:\Project\Contact\Instrumentation\bin\Debug\Instrumentation.pdb
-H:\Project\Contact\Instrumentation\obj\Debug\Instrumentation.csproj.CoreCompileInputs.cache
-H:\Project\Contact\Instrumentation\obj\Debug\Instrumentation.dll
-H:\Project\Contact\Instrumentation\obj\Debug\Instrumentation.pdb
-H:\Project\Contact\Instrumentation\obj\Debug\Instrumentation.csprojResolveAssemblyReference.cache
