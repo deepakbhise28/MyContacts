@@ -1,0 +1,10 @@
+H:\Project\Contact\Entity.Contact\bin\Debug\MyContact.Entity.dll
+H:\Project\Contact\Entity.Contact\bin\Debug\MyContact.Entity.pdb
+H:\Project\Contact\Entity.Contact\obj\Debug\MyContact.Entity.csproj.CoreCompileInputs.cache
+H:\Project\Contact\Entity.Contact\obj\Debug\MyContact.Entity.dll
+H:\Project\Contact\Entity.Contact\obj\Debug\MyContact.Entity.pdb
+H:\Project\MyContact\MyContact.Entity\bin\Debug\MyContact.Entity.dll
+H:\Project\MyContact\MyContact.Entity\bin\Debug\MyContact.Entity.pdb
+H:\Project\MyContact\MyContact.Entity\obj\Debug\MyContact.Entity.csproj.CoreCompileInputs.cache
+H:\Project\MyContact\MyContact.Entity\obj\Debug\MyContact.Entity.dll
+H:\Project\MyContact\MyContact.Entity\obj\Debug\MyContact.Entity.pdb
