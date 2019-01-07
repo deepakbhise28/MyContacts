@@ -255,6 +255,10 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\aspnet-Contact-20190104080730.mdf" />
+    <Content Include="App_Data\aspnet-Contact-20190104080730_log.ldf">
+      <DependentUpon>aspnet-Contact-20190104080730.mdf</DependentUpon>
+    </Content>
     <Content Include="Areas\HelpPage\HelpPage.css" />
     <Content Include="Areas\HelpPage\Views\_ViewStart.cshtml" />
     <Content Include="Content\bootstrap.css" />
@@ -347,9 +351,7 @@
     <Content Include="Views\Contact\AddContact.cshtml" />
     <Content Include="Views\Account\_ApplicationInfo.cshtml" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
   </ItemGroup>
