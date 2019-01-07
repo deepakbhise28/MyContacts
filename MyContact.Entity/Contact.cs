@@ -1,22 +1,25 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace MyContact.Entity
 {
     public class Contact
     {
-        public long Id { get; set; }
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public Guid Id { get; set; }
 
         public string UserId { get; set; }
 
         [Required]
         [StringLength(50, ErrorMessage = "Minimum 2 and maximum 50 letters are allowed.", MinimumLength = 2)]
-        //[RegularExpression("^([a-zA-Z]{2,}\\s[a-zA-z]{1,}'?-?[a-zA-Z]{2,}\\s?([a-zA-Z]{1,})?)", ErrorMessage = "Valid Charactors include (A-Z) (a-z) (' space -)")]
+        [RegularExpression("^[a-zA-Z]+((['][a-zA-Z ])?[a-zA-Z]*)*$", ErrorMessage = "Valid Charactors include (A-Z) (a-z) (')")]
         [Display(Name = "First Name")]
         public string FirstName { get; set; }
 
         [Required]
         [StringLength(50, ErrorMessage = "Minimum 2 and maximum 50 letters are allowed.", MinimumLength = 2)]
-        //[RegularExpression("^([a-zA-Z]{2,}\\s[a-zA-z]{1,}'?-?[a-zA-Z]{2,}\\s?([a-zA-Z]{1,})?)", ErrorMessage = "Valid Charactors include (A-Z) (a-z) (' space -)")]
+        [RegularExpression("^[a-zA-Z]+((['][a-zA-Z ])?[a-zA-Z]*)*$", ErrorMessage = "Valid Charactors include (A-Z) (a-z) (')")]
         [Display(Name = "Last Name")]
         public string LastName { get; set; }
 

@@ -4,6 +4,7 @@ using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using System.Web;
 using System.Web.Mvc;
+using System;
 
 namespace MyContact.Controllers
 {
@@ -14,13 +15,13 @@ namespace MyContact.Controllers
         private const string Add_ViewName = "AddContact";
         private const string Edit_ViewName = "EditContact";
        
-        private IRepository<Contact,long> _repository;
+        private IRepository<Contact, Guid> _repository;
         public ContactController()
         {
             _repository = new ContactRepository();
         }
 
-        public ContactController(IRepository<Contact, long> repository)
+        public ContactController(IRepository<Contact, Guid> repository)
         {
             _repository = repository;
             
@@ -70,7 +71,7 @@ namespace MyContact.Controllers
         /// </summary>
         /// <param name="id">contact card id</param>
         /// <returns>show detail to edit</returns>
-        public ActionResult EditContact(long id)
+        public ActionResult EditContact(Guid id)
         {  
             var contact = _repository.Get(User.Identity.GetUserId(), id);
             return View(contact);
@@ -102,7 +103,7 @@ namespace MyContact.Controllers
         /// <param name="id">contact id</param>
         /// <returns>return to contact list</returns>       
      
-        public ActionResult DeleteContact(long id)
+        public ActionResult DeleteContact(Guid id)
         {  
             _repository.Delete(User.Identity.GetUserId(), id);
             // var contacts = _repository.Get(User.Identity.GetUserId());

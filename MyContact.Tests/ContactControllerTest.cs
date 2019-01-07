@@ -38,7 +38,7 @@ namespace MyContact.Tests
             return contactController;
         }
 
-        long id = 1;
+        Guid id = new Guid();
         [TestMethod]
         public void AddContact()
         {
@@ -70,7 +70,7 @@ namespace MyContact.Tests
         [TestMethod]
         public void EditContact()
         {
-            var result = Get().EditContact(1);
+            var result = Get().EditContact(id);
             Assert.IsNotNull(result);
         }
 
@@ -85,7 +85,7 @@ namespace MyContact.Tests
         [TestMethod]
         public void DeleteContact()
         {
-            var result = Get().DeleteContact(1);
+            var result = Get().DeleteContact(id);
             Assert.IsNotNull(result);
         }
 

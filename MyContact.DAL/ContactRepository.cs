@@ -1,18 +1,19 @@
 ﻿using MyContact.Entity;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
 
 namespace MyContact.DAL
 {
-    public class ContactRepository : IRepository<Contact, long>
+    public class ContactRepository : IRepository<Contact, Guid>
     {
         ContactContext context = null;
         public ContactRepository()
         {
             context = new ContactContext();
         }
-        public bool Delete(string userId, long key)
+        public bool Delete(string userId, Guid key)
         {
            var record = context.Contacts.FirstOrDefault(x => x.UserId == userId && x.Id == key);
             if(record == null)
@@ -32,7 +33,7 @@ namespace MyContact.DAL
             return context.Contacts.Where(x => x.UserId == userId);
         }
 
-        public Contact Get(string userId, long key)
+        public Contact Get(string userId, Guid key)
         {
           return context.Contacts.FirstOrDefault(x => x.UserId == userId && x.Id == key);
         }
